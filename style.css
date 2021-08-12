@@ -1,0 +1,38 @@
+table, th, td {
+    border: 1px solid black;
+  }
+
+  .tableContainer {
+      display: flex;
+
+  }
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.selectButtonContainer {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    left: 90%;
+}
+
+
+.tableContainer {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding: 10px;
+  }
+
+  .selectButton {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+.cloud {
+    width: 2.5rem;
+    height: auto;
+    float: right;
+}

@@ -1,11 +1,9 @@
 const model = {
     // app nivå ting
     app: {
-        currentPage: 'mainPage',
-        loggedInUser: 'admin',
-
-        userID: "admin",
-        password: "team3erbest",
+        currentPage: 'mainView',
+        loggedInUser: '',
+        logInStatus: "Logg Ut",
     },
 
 
@@ -23,40 +21,47 @@ const model = {
         question: '',
         answer: '',
     },
-   // felles data
+    // felles data
 
-   pollsList: [
+    pollList: [
         {
             id: 1,
-            title: model.createPage.title,
+            title: 'Trivsel på jobb',
             totalVotes: 0,
             questions: [],
-            votes: 0,
-        },
-   ],
-
-   polls: [
-       {
-            title: "Skriv inn spørsmål...",
-            alt1: {
-                    name: 'Skriv inn alternativ...',
-
-                  },
+            votes: [],
         },
     ],
 
     tempQuestions: [
-            {
-               question: 'Hvor mye liker du jobben din?',
+        {
+            title: 'Trivsel på jobb',
 
-               alts: [
-                   "Lite",
-                   "Middels",
-                   "Mye",
-                ],
+            question: 'Hvor mye liker du jobben din?',
 
-            },
+            alts: [
+                "Lite",
+                "Middels",
+                "Mye",
+            ],
+
+        },
     ],
+
+    userID: "admin",
+    password: "team3erbest",
+
+    //    polls: [
+    //        {
+    //             title: "Skriv inn spørsmål...",
+    //             alt1: {
+    //                     name: 'Skriv inn alternativ...',
+
+    //                   },
+    //         },
+    //     ],
+
+
 
 };
 
